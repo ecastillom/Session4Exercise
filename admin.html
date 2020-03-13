@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/Admin.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Catalog<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>
+            Register a New Item
+        </h1>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Code:</label>
+            <input type="text" class="form-control" id="ItemCode" placeholder="Type Code">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Tittle:</label>
+            <input type="text" class="form-control" id="ItemTitle" placeholder="Type Tittle">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Price:</label>
+            <input type="number" class="form-control" id="ItemPrice" placeholder="Type Price">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Description:</label>
+            <input type="text" class="form-control" id="ItemDescription" placeholder="Type Description">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Category:</label>
+            <input type="text" class="form-control" id="ItemCategory" placeholder="Type Category">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Image:</label>
+            <input type="text" class="form-control" id="ItemImage" placeholder="Type Image">
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2" id="btnRegister">Register</button>
+
+        <span id="AlertMessage" class="alert alert-success hidden" role="alert">
+            <stron>
+                The Item is saved
+            </stron>
+        </span>
+    </div>
+
+    <script src="Script/jquery-1.12.0.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    <script src="Script/admin.js"></script>
+</body>
+</html>
